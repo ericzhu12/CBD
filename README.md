@@ -1,1 +1,1 @@
-# CBD
+# CBD Coin
