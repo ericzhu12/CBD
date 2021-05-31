@@ -707,7 +707,7 @@ contract CBD is Context, IERC20, Ownable {
     address[] private _blackListedBots;
 
     uint256 private constant MAX = ~uint256(0);
-    uint256 private _tTotal = 5000000000 * 10**9;
+    uint256 private _tTotal = 500000000 * 10**1 * 10**9;
     uint256 private _rTotal = (MAX - (MAX % _tTotal));
     uint256 private _tFeeTotal;
 
@@ -730,8 +730,8 @@ contract CBD is Context, IERC20, Ownable {
     bool public swapAndLiquifyEnabled = true;
     bool swapInProgress;
 
-    uint256 public _maxTxAmount = 20000000 * 10**9;
-    uint256 private numTokensSellToAddToLiquidity = 1500000 * 10**9;
+    uint256 public _maxTxAmount = 2000000 * 10**1 * 10**9;
+    uint256 private numTokensSellToAddToLiquidity = 150000 * 10**1 * 10**9;
 
     event MinTokensBeforeSwapUpdated(uint256 minTokensBeforeSwap);
     event SwapAndLiquifyEnabledUpdated(bool enabled);
